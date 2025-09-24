@@ -1,0 +1,22 @@
+# 应用过设置
+server:
+  port: 8008
+
+# 日志配置
+logging:
+  config: classpath:logback.xml
+  level:
+    com.zhou.test: info
+    org.springframework: warn
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 500MB
+      max-request-size: 500MB
+loader:
+  path: src/main/resources/lib/
+
+# music配置
+music:
+  music-folder: F:\\NeuroX-2.0\\enviroment\\music
